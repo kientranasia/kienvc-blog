@@ -1,0 +1,53 @@
+baseURL = "https://kien.vc/"
+title = "Kien Ventures"
+theme = "PaperMod"
+languageCode = "en-us"
+enableRobotsTXT = true
+paginate = 10
+enableGitInfo = true
+# Enable sitemap and RSS
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  description = "Kien Ventures Blog"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  # SEO and social
+  keywords = ["Kien Ventures", "Blog", "Kien.vc"]
+  author = "Kien Tran"
+  images = ["/images/cover.png"]
+  # OpenGraph/Twitter
+  env = "production"
+  ShowToc = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  # Social links (customize as needed)
+  socialIcons = [
+    { name = "github", url = "https://github.com/kienvc" },
+    { name = "twitter", url = "https://twitter.com/kienvc" }
+  ]
+
+# Sitemap config
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# Enable RSS
+[mediaTypes."application/rss+xml"]
+  suffixes = ["xml"]
+
+[outputFormats.RSS]
+  mediaType = "application/rss+xml"
+  baseName = "index"
+  isPlainText = false
+  notAlternative = false
