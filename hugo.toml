@@ -25,11 +25,6 @@ enableGitInfo = true
   # OpenGraph/Twitter
   env = "production"
   ShowToc = true
-  ShowBreadCrumbs = true
-  ShowPostNavLinks = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
   # Social links (customize as needed)
   socialIcons = [
     { name = "github", url = "https://github.com/kienvc" },
