@@ -1,10 +1,8 @@
-baseURL = "https://kien.vc/"
+baseURL = "https://blog.kien.vc/"
 title = "Kien Ventures"
 theme = "PaperMod"
 languageCode = "en-us"
 enableRobotsTXT = true
-paginate = 10
-enableGitInfo = true
 # Enable sitemap and RSS
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -25,11 +23,15 @@ enableGitInfo = true
   # OpenGraph/Twitter
   env = "production"
   ShowToc = true
+  mainSections = ["posts"]
   # Social links (customize as needed)
   socialIcons = [
-    { name = "github", url = "https://github.com/kienvc" },
-    { name = "twitter", url = "https://twitter.com/kienvc" }
+    { name = "github", url = "https://github.com/kientranasia" },
+    { name = "twitter", url = "https://twitter.com/kientranasia" }
   ]
+  [params.footer]
+    copyright = "© 2025 Kien Ventures"
+    text = ""
 
 # Sitemap config
 [sitemap]
@@ -46,3 +48,20 @@ enableGitInfo = true
   baseName = "index"
   isPlainText = false
   notAlternative = false
+
+[pagination]
+  pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    name = "Archive"
+    url = "/archives/"
+    weight = 1
+  [[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/kientranasia"
+    weight = 2
+  [[menu.main]]
+    name = "LinkedIn"
+    url = "www.linkedin.com/in/kientranasia"
+    weight = 3

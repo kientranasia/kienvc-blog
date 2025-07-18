@@ -2,6 +2,8 @@
 # Deploy Hugo site to GitHub Pages (gh-pages branch)
 set -e
 
+rm -rf public/.git
+
 hugo --minify
 cd public
 
